@@ -6,15 +6,16 @@ public class Calculator {
         int x,y,z=0;
 
         System.out.print("Enter any two numbers: ");
-        x = sc.nextInt();
-        y = sc.nextInt();
+
 
 
         try{
+            x = sc.nextInt();
+            y = sc.nextInt();
             z=x/y;
             System.out.println("Exception not occurs");
         }
-        catch (ArithmeticException e){
+        catch (Exception e){
             System.out.println(e.getMessage());
         }
         finally {
